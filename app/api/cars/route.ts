@@ -7,12 +7,14 @@ export async function GET(request: Request) {
 	const cursor = searchParams.get('cursor') ?? ''
 	const limit = 10
 
-	const data = fetchCars()
+	// const data = fetchCars()
 
-	console.log(data)
+	// console.log(data)
 
-	const hasMore = data.brands?.length > limit
+	// const hasMore = data.brands?.length > limit
 
-	return Response.json({ items: data.brands, nextCursor: 4 })
+	// return Response.json({ items: data.brands, nextCursor: 4 })
+
+	return Response.json({ items: [], nextCursor: 4 })
 
 }

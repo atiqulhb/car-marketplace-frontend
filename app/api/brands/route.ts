@@ -60,6 +60,6 @@ export async function GET(request: Request) {
 
 	const nextCursor = hasMore ? items[items.length - 1].id : null
 
-	return Response.json({ items: data.brands, nextCursor })
+	return Response.json({ items: data.brands, nextCursor: 4 })
 
 }

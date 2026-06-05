@@ -3,9 +3,9 @@
 import { useActionState } from 'react'
 import Link from 'next/link'
 import addCar from '@/actions/addCar'
-import SelectBrand from './SelectBrand'
-import SelectModel from './SelectModel'
-import SelectFuelType from './SelectFuelType'
+// import SelectBrand from './SelectBrand'
+// import SelectModel from './SelectModel'
+// import SelectFuelType from './SelectFuelType'
 import MultipleImageUpload from '@/components/MultipleImageUpload'
 import styles from './AddCar.module.css'
 
@@ -16,9 +16,9 @@ export default function AddCar() {
 	return (
 		<div className={styles.wrapper}>
 			<form action={action}>
-				<SelectBrand/>
+			{/*	<SelectBrand/>
 				<SelectModel/> 
-				<SelectFuelType/> 
+				<SelectFuelType/> */}
 				{/*<input type="text" name="brandName"/>                             */}
 				{/*<input type="text" name="modelName"/>*/}
 				<input type="number" name="mileage"/>

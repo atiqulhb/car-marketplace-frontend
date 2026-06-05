@@ -3,7 +3,7 @@
 import { getSessionHeader } from '@/lib/keystone'
 import { env } from '../config/env'
 
-export default async function addCar( prevState: State, formData: FormData) {
+export default async function addCar( prevState: any, formData: FormData) {
   const sessionHeader = await getSessionHeader()
 
   let brandId

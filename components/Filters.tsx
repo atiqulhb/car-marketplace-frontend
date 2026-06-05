@@ -1,9 +1,10 @@
 import React from 'react'
-import SelectForFilters from '@/components/SelectForFilters'
+// import SelectForFilters from '@/components/SelectForFilters'
 
 export default function Filters() {
 	
 	return (
-		<SelectForFilters/>
+		<div></div>
+		// <SelectForFilters/>
 	)
 }

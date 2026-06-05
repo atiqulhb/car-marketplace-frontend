@@ -8,14 +8,14 @@ import CarsDisplay from '@/components/CarsDisplay'
 export default async function Home({ searchParams }) {
   const params = await searchParams
   const where = buildWhere(params)
-  const cars = await fetchCars(where)
+  // const cars = await fetchCars(where)
   return (
     <div>
       <Suspense>
         <Filters/>
       </Suspense>
       <Suspense>
-        <CarsDisplay cars={cars}/>
+        {/* <CarsDisplay cars={cars}/> */}
       </Suspense>
     </div>
   )
